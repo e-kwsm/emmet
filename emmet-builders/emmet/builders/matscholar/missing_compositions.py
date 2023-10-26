@@ -118,8 +118,8 @@ class MissingCompositionsBuilder(Builder):
 
     def process_item(self, item: dict) -> dict:
         """
-        Processes a chemical system and finds missing c
-        ompositions for that system.
+        Processes a chemical system and finds missing
+        compositions for that system.
         Note that it returns a missing_compositions dict
         regardless of whether there is a missing composition,
         in which case, it contains an empty dictionary for
