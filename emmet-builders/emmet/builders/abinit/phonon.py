@@ -502,7 +502,7 @@ class PhononBuilder(Builder):
         if not report.run_completed:
             raise AnaddbError(task=task, report=report)
 
-        self.logger.debug("anaddb succesful for {}".format(ddb_path))
+        self.logger.debug("anaddb successful for {}".format(ddb_path))
 
         return task
 
