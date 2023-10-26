@@ -88,7 +88,7 @@ class CorrectedEntriesBuilder(Builder):
 
     def ensure_indexes(self):
         """
-        Ensures indicies on the tasks and materials collections
+        Ensures indices on the tasks and materials collections
         """
 
         # Search index for materials
@@ -220,7 +220,7 @@ class CorrectedEntriesBuilder(Builder):
         """
         Gets entries from the materials collection for the corresponding chemical systems
         Args:
-            chemsys (str): a chemical system represented by string elements seperated by a dash (-)
+            chemsys (str): a chemical system represented by string elements separated by a dash (-)
         Returns:
             set (ComputedEntry): a set of entries for this system
         """

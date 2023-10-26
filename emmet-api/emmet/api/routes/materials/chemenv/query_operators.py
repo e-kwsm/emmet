@@ -36,11 +36,11 @@ class ChemEnvQuery(QueryOperator):
         ),
         csm_min: float | None = Query(
             None,
-            description="Minimum value of the continous symmetry measure for any site.",
+            description="Minimum value of the continuous symmetry measure for any site.",
         ),
         csm_max: float | None = Query(
             None,
-            description="Maximum value of the continous symmetry measure for any site.",
+            description="Maximum value of the continuous symmetry measure for any site.",
         ),
     ) -> STORE_PARAMS:
         crit = defaultdict(dict)  # type: dict
