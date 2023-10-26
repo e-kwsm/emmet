@@ -266,7 +266,7 @@ class ThermoDoc(PropertyDoc):
     @staticmethod
     def construct_phase_diagram(entries) -> PhaseDiagram:
         """
-        Efficienty construct a phase diagram using only the lowest entries at every composition
+        Efficiently construct a phase diagram using only the lowest entries at every composition
         represented in the entry data passed.
 
         Args:
