@@ -79,7 +79,7 @@ class MigrationGraphDoc(EmmetBaseModel):
 
     matrix_supercell_structure: Optional[Structure] = Field(
         None,
-        description="The matrix suprcell structure that does not contain the mobile ions for the purpose of migration analysis.",  # noqa: E501
+        description="The matrix supercell structure that does not contain the mobile ions for the purpose of migration analysis.",  # noqa: E501
     )
 
     conversion_matrix: Optional[List[List[Union[int, float]]]] = Field(
