@@ -31,7 +31,7 @@ class MissingCompositionsBuilder(Builder):
         """
         Arguments:
             phase_diagram: source store for chemsys data
-            matsholar_store: source store for matscholar data
+            matscholar_store: source store for matscholar data
             missing_compositions: Target store to save the missing compositions
             query: dictionary to query the phase diagram store
             **kwargs: Additional keyword arguments
