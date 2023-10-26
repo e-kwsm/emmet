@@ -6,7 +6,7 @@ from pymatgen.core.periodic_table import DummySpecies
 
 def formula_to_criteria(formulas: str) -> dict:
     """
-    Santizes formula into a dictionary to search with wild cards
+    Sanitizes formula into a dictionary to search with wild cards
 
     Arguments:
         formula: formula with wildcards in it for unknown elements
@@ -225,7 +225,7 @@ def formula_to_atlas_criteria(formulas: str) -> dict:
 
 def chemsys_to_criteria(chemsys: str) -> dict:
     """
-    Santizes chemsys into a dictionary to search with wild cards
+    Sanitizes chemsys into a dictionary to search with wild cards
 
     Arguments:
         chemsys: A comma delimited string list of chemical systems

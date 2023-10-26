@@ -120,7 +120,7 @@ def electrodes_chemsys_to_criteria(chemsys: str) -> dict:
     over electrodes data
 
     Arguments:
-        chemsys: A comma delimited string list ofchemical systems
+        chemsys: A comma delimited string list of chemical systems
             with wildcards in it for unknown elements
 
     Returns:

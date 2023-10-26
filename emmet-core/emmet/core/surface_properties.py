@@ -15,7 +15,7 @@ if TYPE_CHECKING:
 
 class SurfaceEntry(BaseModel):
     """
-    Surface energies, miller indicies, ...
+    Surface energies, miller indices, ...
     """
 
     miller_index: list[int] | None = Field(

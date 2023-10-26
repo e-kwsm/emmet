@@ -39,7 +39,7 @@ class MissingCompositionsBuilder(Builder):
         """
         Arguments:
             phase_diagram: source store for chemsys data
-            matsholar_store: source store for matscholar data
+            matscholar_store: source store for matscholar data
             missing_compositions: Target store to save the missing compositions
             query: dictionary to query the phase diagram store
             **kwargs: Additional keyword arguments
@@ -77,7 +77,7 @@ class MissingCompositionsBuilder(Builder):
         """
         Returns all chemical systems (combinations of elements)
         to process.
-        Enumarates all chemical systems and queries the
+        Enumerates all chemical systems and queries the
         phase diagram for each system, in the case where
         the chemical system is not found in the phase diagram,
         it returns a dictionary with the chemical system
@@ -121,13 +121,13 @@ class MissingCompositionsBuilder(Builder):
                 }
                 yield doc
             except Exception as ex:
-                self.logger.error(f"Erro looking for phase diagram for {sys}: {ex}")
+                self.logger.error(f"Error looking for phase diagram for {sys}: {ex}")
                 continue
 
     def process_item(self, item: dict) -> dict:
         """
-        Processes a chemical system and finds missing c
-        ompositions for that system.
+        Processes a chemical system and finds missing
+        compositions for that system.
         Note that it returns a missing_compositions dict
         regardless of whether there is a missing composition,
         in which case, it contains an empty dictionary for

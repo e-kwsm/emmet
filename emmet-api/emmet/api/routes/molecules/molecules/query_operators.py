@@ -96,7 +96,7 @@ class CompositionElementsQuery(QueryOperator):
             except ValueError:
                 raise HTTPException(
                     status_code=400,
-                    detail="Please provide a comma-seperated list of elements",
+                    detail="Please provide a comma-separated list of elements",
                 )
 
             for el in element_list:
@@ -110,7 +110,7 @@ class CompositionElementsQuery(QueryOperator):
             except ValueError:
                 raise HTTPException(
                     status_code=400,
-                    detail="Please provide a comma-seperated list of elements",
+                    detail="Please provide a comma-separated list of elements",
                 )
 
             for el in element_list:

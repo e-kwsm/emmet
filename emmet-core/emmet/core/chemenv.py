@@ -360,7 +360,7 @@ class ChemEnvDoc(PropertyDoc):
     )
 
     csm: list[float | None] = Field(
-        description="Saves the continous symmetry measures for unique (cationic) species in structure"
+        description="Saves the continuous symmetry measures for unique (cationic) species in structure"
     )
 
     method: str | None = Field(
@@ -439,7 +439,7 @@ class ChemEnvDoc(PropertyDoc):
         lgf.setup_structure(structure=structure)
         all_ce = AllCoordinationGeometries()
         if len(valences) == len(structure):
-            # Standard alorithm will only focus on cations and cation-anion bonds!
+            # Standard algorithm will only focus on cations and cation-anion bonds!
             method_description = "DefaultSimplestChemenvStrategy"
             method = AVAILABLE_METHODS[method_description]
             # We will only focus on cations!
@@ -489,7 +489,7 @@ class ChemEnvDoc(PropertyDoc):
                 index in inequivalent_indices_cations
                 and len(lse.neighbors_sets[index] or []) > 0
             ):
-                # Coordinaton environment will be saved as a molecule!
+                # Coordination environment will be saved as a molecule!
                 mol = Molecule.from_sites(
                     [structure[index]] + lse.neighbors_sets[index][0].neighb_sites
                 )

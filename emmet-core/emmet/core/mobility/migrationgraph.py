@@ -130,13 +130,13 @@ class MigrationGraphDoc(EmmetBaseModel):
 
     minmax_num_atoms: tuple[int, int] | None = Field(
         None,
-        description="The min/max number of atoms used to genreate supercell using pymatgen.",
+        description="The min/max number of atoms used to generate supercell using pymatgen.",
     )
 
     matrix_supercell_structure: Structure | None = Field(
         None,
         description=(
-            "The matrix suprcell structure that does not contain the "
+            "The matrix supercell structure that does not contain the "
             "mobile ions for the purpose of migration analysis."
         ),
     )

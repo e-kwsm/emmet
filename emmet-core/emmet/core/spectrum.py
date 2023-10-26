@@ -17,7 +17,7 @@ class SpectrumDoc(StructureMetadata, EmmetBaseModel):
 
     material_id: IdentifierType | None = Field(
         None,
-        description="The ID of the material, used as a universal reference across proeprty documents. "
+        description="The ID of the material, used as a universal reference across property documents. "
         "This comes in the form: mp-******.",
     )
 
