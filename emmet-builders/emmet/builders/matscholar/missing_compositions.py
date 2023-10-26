@@ -65,7 +65,7 @@ class MissingCompositionsBuilder(Builder):
         """
         Returns all chemical systems (combinations of elements)
         to process.
-        Enumarates all chemical systems and queries the
+        Enumerates all chemical systems and queries the
         phase diagram for each system, in the case where
         the chemical system is not found in the phase diagram,
         it returns a dictionary with the chemical system
@@ -109,7 +109,7 @@ class MissingCompositionsBuilder(Builder):
                 }
                 yield doc
             except Exception as ex:
-                self.logger.error(f"Erro looking for phase diagram for {sys}: {ex}")
+                self.logger.error(f"Error looking for phase diagram for {sys}: {ex}")
                 continue
 
     def process_item(self, item: Dict) -> Dict:
