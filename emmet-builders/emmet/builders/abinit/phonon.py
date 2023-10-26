@@ -581,7 +581,7 @@ class PhononBuilder(Builder):
             spgn = spga.get_space_group_number()
             if spgn != item["spacegroup"]["number"]:
                 raise RuntimeError(
-                    "Parsed specegroup number {} does not match "
+                    "Parsed spacegroup number {} does not match "
                     "calculation spacegroup {}".format(
                         spgn, item["spacegroup"]["number"]
                     )
