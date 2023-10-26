@@ -135,7 +135,7 @@ class MigrationGraphDoc(EmmetBaseModel):
     matrix_supercell_structure: Structure | None = Field(
         None,
         description=(
-            "The matrix suprcell structure that does not contain the "
+            "The matrix supercell structure that does not contain the "
             "mobile ions for the purpose of migration analysis."
         ),
     )
