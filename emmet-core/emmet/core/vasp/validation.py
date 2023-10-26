@@ -92,7 +92,7 @@ class ValidationDoc(EmmetBaseModel):
             pseudo_dir: directory of pseudopotential directory to ensure correct hashes
             LDAU_fields: LDAU fields to check for consistency
             max_allowed_scf_gradient: maximum uphill gradient allowed for SCF steps after the
-                initial equillibriation period
+                initial equilibration period
             potcar_stats: Dictionary of potcar stat data. Mapping is calculation type -> potcar symbol -> hash value.
         """
 
