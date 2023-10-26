@@ -236,7 +236,7 @@ tags_meta = [
     {
         "name": "Materials Alloys",
         "description": "Route for retrevial of information about which hypothetical alloy(s) a given material might "
-        "belong to, following the methodolgy discussed by "
+        "belong to, following the methodology discussed by "
         "[Woods-Robinson, Horton and Persson](https://arxiv.org/pdf/2206.10715).",
     },
     {

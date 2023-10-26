@@ -6,7 +6,7 @@ from fastapi import HTTPException
 
 def electrodes_formula_to_criteria(formulas: str) -> Dict:
     """
-    Santizes formula into a dictionary to search with wild cards
+    Sanitizes formula into a dictionary to search with wild cards
     over electrodes data
 
     Arguments:
@@ -117,11 +117,11 @@ def electrodes_formula_to_criteria(formulas: str) -> Dict:
 
 def electrodes_chemsys_to_criteria(chemsys: str) -> Dict:
     """
-    Santizes chemsys into a dictionary to search with wild cards
+    Sanitizes chemsys into a dictionary to search with wild cards
     over electrodes data
 
     Arguments:
-        chemsys: A comma delimited string list ofchemical systems
+        chemsys: A comma delimited string list of chemical systems
             with wildcards in it for unknown elements
 
     Returns:
