@@ -52,7 +52,7 @@ class ValidationDoc(EmmetBaseModel):
         [], description="List of potential warnings about this calculation"
     )
     data: Dict = Field(
-        description="Dictioary of data used to perform validation."
+        description="Dictionary of data used to perform validation."
         " Useful for post-mortem analysis"
     )
     model_config = ConfigDict(extra="allow")
