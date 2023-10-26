@@ -114,7 +114,7 @@ class PiezoelectricDoc(PropertyDoc):
         electronic_tensor = BasePiezoTensor.from_vasp_voigt(electronic)
         total: BasePiezoTensor = ionic_tensor + electronic_tensor  # type: ignore[assignment]
 
-        # Symmeterize Convert to IEEE orientation
+        # Symmetrize Convert to IEEE orientation
         total = total.convert_to_ieee(structure)
         ionic_tensor = ionic_tensor.convert_to_ieee(structure)
         electronic_tensor = electronic_tensor.convert_to_ieee(structure)
