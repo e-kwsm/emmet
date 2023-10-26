@@ -433,7 +433,7 @@ def _magmom_check(
 ):
     """
     Checks for maximum magnetization values for specific elements.
-    Returns True if the maximum absolute value outlined below is exceded for the associated element.
+    Returns True if the maximum absolute value outlined below is exceeded for the associated element.
     """
     if (outcar := calcs_reversed[0]["output"]["outcar"]) and (
         mag_info := outcar.get("magnetization", [])
