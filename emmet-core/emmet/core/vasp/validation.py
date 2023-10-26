@@ -340,7 +340,7 @@ def _potcar_hash_check(task_doc, potcar_hashes):
 def _magmom_check(task_doc, chemsys):
     """
     Checks for maximum magnetization values for specific elements.
-    Returns True if the maximum absolute value outlined below is exceded for the associated element.
+    Returns True if the maximum absolute value outlined below is exceeded for the associated element.
     """
     eles_max_vals = {"Cr": 5}
 
