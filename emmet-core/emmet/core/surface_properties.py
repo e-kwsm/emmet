@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 
 class SurfaceEntry(BaseModel):
     """
-    Surface energies, miller indicies, ...
+    Surface energies, miller indices, ...
     """
 
     miller_index: Optional[List[int]] = Field(
