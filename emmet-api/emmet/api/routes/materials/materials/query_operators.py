@@ -94,7 +94,7 @@ class ElementsQuery(QueryOperator):
             except ValueError:
                 raise HTTPException(
                     status_code=400,
-                    detail="Please provide a comma-seperated list of elements",
+                    detail="Please provide a comma-separated list of elements",
                 )
 
             crit["elements"]["$all"] = [str(el) for el in element_list]
@@ -105,7 +105,7 @@ class ElementsQuery(QueryOperator):
             except ValueError:
                 raise HTTPException(
                     status_code=400,
-                    detail="Please provide a comma-seperated list of elements",
+                    detail="Please provide a comma-separated list of elements",
                 )
             crit["elements"]["$nin"] = [str(el) for el in element_list]
 
