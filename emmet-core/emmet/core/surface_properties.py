@@ -4,7 +4,7 @@ from pymatgen.core.structure import Structure
 
 class SurfaceEntry(BaseModel):
     """
-    Surface energies, miller indicies, ...
+    Surface energies, miller indices, ...
     """
 
     miller_index: list[int] | None = Field(

@@ -47,7 +47,7 @@ VALID_ALPHA_SEPARATORS: set[str] = {
 class MPID(str):
     """
     A Materials Project type ID with a prefix and an integer
-    This class enables seemlessly mixing MPIDs and regular integer IDs
+    This class enables seamlessly mixing MPIDs and regular integer IDs
     Prefixed IDs are considered less than non-prefixed IDs to enable proper
     mixing with the Materials Project
 
