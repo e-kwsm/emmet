@@ -88,7 +88,7 @@ class ThermoBuilder(Builder):
 
     def ensure_indexes(self):
         """
-        Ensures indicies on the tasks and materials collections
+        Ensures indices on the tasks and materials collections
         """
 
         # Search index for corrected_entries
