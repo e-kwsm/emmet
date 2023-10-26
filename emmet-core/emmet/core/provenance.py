@@ -73,7 +73,7 @@ class SNLAbout(BaseModel):
 
     history: List[History] = Field(
         [],
-        description="List of history nodes specifying the transformations or orignation"
+        description="List of history nodes specifying the transformations or origination"
         " of this material for the entry closest matching the material input.",
     )
 
@@ -129,7 +129,7 @@ class ProvenanceDoc(PropertyDoc):
 
     history: List[History] = Field(
         [],
-        description="List of history nodes specifying the transformations or orignation"
+        description="List of history nodes specifying the transformations or origination"
         " of this material for the entry closest matching the material input",
     )
 
